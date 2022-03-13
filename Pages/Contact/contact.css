@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#Home{
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.title{
+    font-size: 3rem;
+}
+
+.subtitle{
+    font-size: 1.5rem;
+}
+
+#form_section{
+    max-width: 50%;
+    margin: 2rem auto;
+    background-color: var(--forest-green);
+    padding: 2rem;
+    border-radius: 0.6rem;
+}
+
+#form_section div{
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem 0;
+    gap: 0.5rem 0
+}
+
+#form_section h3,
+#form_section label{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+#form_section textarea,
+#form_section input{
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.6rem;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+#option_div div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.options{
+    display: flex;
+    flex-direction: row;
+}
+
+#comments{
+    min-height: 20rem;
+    width: 100%;
+}
+
+.submit_button{
+    cursor: pointer;
+    font-size: 1.2rem;
+    background-color: var(--lime-green);
+    color: var(--dark-forest-green);
+    border-radius: 0.6rem;
+    width: 80%;
+    margin: 2rem auto 0 auto;
+    border: none;
+    padding: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.submit_button:hover{
+    background-color: var(--sage-green);
+    transition: 0.2s 0.1s;
+}

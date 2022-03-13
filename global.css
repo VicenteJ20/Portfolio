@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --dark-forest-green: #08313A;
+    --forest-green: #1A5653;
+    --teal-green: #107869;
+    --lime-green: #5CD85A;
+    --pewter: #EBEBE8;
+    --sage-green: #D1E2C4; 
+}
+
+html{
+    background-color: var(--dark-forest-green);
+    color: var(--pewter);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 0.95rem;
+    box-sizing: border-box;
+    padding: 0 2rem;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid var(--lime-green);
+}
+
+.enlaces_menu{
+    display: flex;
+    gap: 0 2rem;
+    list-style: none;
+}
+
+.nav_link{
+    color: var(--pewter);
+    text-decoration: none;
+}
+
+.nav_link:hover{
+    color: var(--lime-green);
+    transition: 0.2s;
+}
+
+.ham{
+    cursor: pointer;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    color: var(--pewter);
+    font-size: 2rem;
+    display: none;
+}
+
+.ham.rotate:hover{
+    transform: rotate(360deg);
+}
+
+.line{
+    border: 1px solid var(--lime-green);
+}
+
+#footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    border-top: 2px solid var(--lime-green);
+}
+
+.social_icons{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    font-size: 1.5rem;
+}
+
+.social_link{
+    color: var(--pewter);
+}
+.social_link:hover{
+    transition: 0.2s 0.1s;
+    color: var(--lime-green);
+}
+
+/* Active links */
+@keyframes displayMenu{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 100%;
+    }
+}
+
+.enlaces_menu.active{
+    display: flex;
+    animation: displayMenu 350ms ease-in-out both;
+}

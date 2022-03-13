@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/global.css">
+    <link rel="stylesheet" href="/Pages/Contact/contact.css">
+    <title>Contacto - Vicente Jorquera</title>
+</head>
+<body>
+    <!-- ---------------------------------------------------------------- -->
+    <nav id="nav">
+        <h3 class="brand">Vicente Jorquera</h3>
+        <ul class="enlaces_menu">
+            <li><a href="/index.html#Home" class="nav_link">Inicio</a></li>
+            <li><a href="/index.html#About" class="nav_link">Acerca de</a></li>
+            <li><a href="/index.html#Projects" class="nav_link">Proyectos</a></li>
+        </ul>
+        <button class="ham" type="button">
+            <i class="fa-solid fa-bars icono"></i>
+        </button>
+    </nav>
+    <!-- --------------------------------------------------------------- -->
+    <section id="Home">
+        <h1 class="title">¡Hablemos!</h1>
+        <p class="subtitle">Complete el formulario más abajo y pronto estaremos en contacto</p>
+    </section>
+    <section id="form_section">
+        <form action="#" id="form">
+            <div>
+                <label for="name" class="name_label">Nombre:</label>
+                <input type="text" name="name" id="name" placeholder="Ingrese su nombre acá..." required>
+            </div>
+            <div>
+                <label for="lastname" class="lastname_label">Apellido:</label>
+                <input type="text" name="lastname" id="lastname" placeholder="Ingrese su apellido acá..." required>
+            </div>
+            <div>
+                <label for="email" class="email_label">Correo electrónico:</label>
+                <input type="email" name="email" id="email" placeholder="Ingrese su correo electrónico acá..." required>
+            </div>
+            <div id="option_div">
+                <h3 class="option_label">¿Usted representa a una empresa?</h3>
+                <div class="options">
+                    <div>
+                        <label for="radio1">Sí <input type="radio" name="radiobutton" id="yes" value="radio1"></label>
+                    </div>
+                    <div>
+                        <label for="radio2">No <input type="radio" name="radiobutton" id="no" value="radio2"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="textarea_div">
+                <h3 class="option_label">Déjanos un comentario:</h3>
+                <textarea name="comments" id="comments" placeholder="Ingrese sus comentarios acá..."></textarea>
+            </div>
+            <div class="button_div">
+                <button type="submit" class="submit_button">Enviar</button>
+            </div>
+        </form>
+    </section>
+    <footer id="footer">
+        <p class="normal_text">Copyright &copy; 2022. Creado por Vicente Jorquera</p>
+        <ul class="social_icons">
+            <li><a href="" class="social_link"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="" class="social_link"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="" class="social_link"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="" class="social_link"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/80b7faac27.js" crossorigin="anonymous"></script>
+    <script src="/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,370 @@
+/* BUTTONS HOVERS */
+
+.contact_button:hover,
+.project_external:hover,
+.project_link:hover,
+.about_link:hover,
+.home_button:hover{
+    background-color: var(--lime-green);
+    color: var(--dark-forest-green);
+    transition: 0.2s 0.1s;
+}
+
+/* -------------- */
+
+#Home{
+    height: 92vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 20%;
+}
+
+#Home_text{
+    line-height: 0.5;
+}
+
+.img_home{
+    max-width: 40rem;
+    text-align: center;
+}
+
+.img_content{
+    width: 30%;
+}
+
+.title{
+    font-size: 3rem;
+}
+
+.title_color{
+    color: var(--lime-green);
+}
+
+.subtitle{
+    font-size: 1.3rem;
+}
+
+#Home_buttons{
+    display: flex;
+    gap: 2rem;
+    padding: 1rem 0;
+}
+
+.home_button{
+    color: var(--pewter);
+    text-decoration: none;
+    background-color: var(--teal-green);
+    border-radius: 0.6rem;
+    padding: 1rem;
+}
+
+
+#About{
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.about_card{
+    border: 2px solid var(--lime-green);
+    max-width: 80%;
+    max-height: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem 1.2rem;
+    border-radius: 0.6rem;
+}
+
+
+.about_img{
+    max-width: 45rem;
+    padding: 1rem;
+    border-radius: 0.6rem;
+    background: rgb(8,49,58);
+    background: -moz-linear-gradient(180deg, rgba(8,49,58,1) 0%, rgba(26,86,83,1) 64%, rgba(16,120,105,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(8,49,58,1) 0%, rgba(26,86,83,1) 64%, rgba(16,120,105,1) 100%);
+    background: linear-gradient(180deg, rgba(8,49,58,1) 0%, rgba(26,86,83,1) 64%, rgba(16,120,105,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#08313a",endColorstr="#107869",GradientType=1);
+}
+
+.title_about{
+    font-size: 3rem;
+    color: var(--lime-green);
+}
+
+.text_about{
+    margin: 3rem 0;
+}
+
+.about_link{
+    background-color: var(--forest-green);
+    padding: 1rem 2rem;
+    color: var(--pewter);
+    text-decoration: none;
+    border-radius: 0.6rem;
+}
+
+
+.title_section{
+    font-size: 2.5rem;
+}
+
+.card_figure{
+    margin: 0;
+    padding: 0;
+}
+
+.card_img{
+    width: 100%;
+    border-radius: 0.6rem;
+}
+
+.card_project{
+    background-color: var(--forest-green);
+    min-width: 30%;
+    max-width: 31%;
+    height: max-content;
+    padding: 1rem;
+    border-radius: 0.6rem;
+}
+
+
+.project_link{
+    color: var(--pewter);
+    background-color: var(--dark-forest-green);
+    padding: 1rem;
+    border-radius: 0.6rem;
+    text-decoration: none;
+}
+
+.project_button{
+    margin: 2rem 0;
+}
+
+
+.project_cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 1.5rem 0;
+}
+
+.title_card{
+    font-size: 1.5rem;
+    color: var(--lime-green);
+}
+
+.more_projects{
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.project_external{
+    padding: 1rem 2rem;
+    color: var(--pewter);
+    text-decoration: none;
+    background-color: var(--forest-green);
+    border-radius: 0.6rem;
+}
+
+#Contact{
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.contact_button{
+    padding: 1rem 2rem;
+    background-color: var(--forest-green);
+    color: var(--pewter);
+    text-decoration: none;
+    width: 20%;
+    margin: 1rem auto;
+    border-radius: 0.6rem;
+}
+
+
+@media only screen and (max-width: 1400px){
+    .img_home{
+        width: 100%;
+    }
+
+    .about_img{
+        max-width: 32rem;
+    }
+
+    #Home{
+        padding: 0 3rem;
+    }
+
+    #Home_text{
+        line-height: 1.2;
+    }
+}
+
+
+@media only screen and (max-width: 1100px){
+
+    #main{
+        margin-top: 2.1rem;
+    }
+    
+    #Home{
+        height: 100vh;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    #Home_text{
+        line-height: 1.2;
+    }
+
+    .img_home{
+        max-width: 15rem;
+    }
+
+    #Home_buttons{
+        width: 50%;
+        margin: 0 auto;
+    }
+    
+    .img_content{
+        width: 100%;
+    }
+
+    .about_img{
+        max-width: 25rem;
+    }
+
+    .title_about{
+        margin: 0.5rem 0;
+        font-size: 2rem;
+    }
+
+    .text_about{
+        margin: 0.5rem 0 1.2rem 0;
+    }
+
+    .title_section{
+        font-size: 2rem;
+    }
+
+    .contact_button{
+        width: fit-content;
+    }
+
+    .contact_subtitle{
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (max-width: 850px){
+    .ham{
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 1rem;
+        right: 1.2rem;
+        transition: 0.2s 0.1s;
+    }
+
+    #nav{
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        padding: 0 2rem;
+        background-color: var(--dark-forest-green);
+    }
+
+    .enlaces_menu{
+        padding: 0 2rem;
+        flex-direction: column;
+        justify-content: space-evenly;
+        font-size: 1.2rem;
+        list-style: disc;
+        align-items: flex-start;
+        height: 50vh;
+        margin: 0;
+        padding: 0;
+        display: none;
+        opacity: 0;
+        transition: opacity 5s ease-in-out both;
+    }
+
+    #main{
+        margin-top: 1rem;
+    }
+
+    .title{
+        font-size: 2.5rem;
+    }
+
+    .subtitle{
+        font-size: 1rem;
+    }
+
+    #Home_buttons{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        gap: 0.5rem 0;
+    }
+
+    .about_card{
+        flex-direction: column;
+        padding: 1.2rem 0.5rem 2rem 1.2rem;
+        max-width: 99%;
+    }
+
+    #About{
+        height: min-content;
+    }
+
+    .about_img{
+        padding: 1rem 0;
+        width: 100%;
+    }
+
+    .project_cards{
+        flex-direction: row;
+    }
+
+    .project_cards{
+        flex-direction: column;
+    }
+
+    .card_project{
+        min-width: 95%;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-height: 700px){
+    html{
+        font-size: 0.7rem;
+    }
+
+    #main{
+        padding: 0 2rem;
+    }
+}
+
+@media only screen and (max-width: 380px){
+    html{
+        font-size: 0.7rem;
+    }
+
+    #main{
+        padding: 0 0.5rem;
+    }
+}
